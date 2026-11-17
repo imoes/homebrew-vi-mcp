@@ -4,8 +4,8 @@
 class ViMcp < Formula
   desc "VI memory as an MCP server for many AI sessions (Streamable HTTP, one process)"
   homepage "https://github.com/imoes/vi-mcp"
-  url "https://github.com/imoes/vi-mcp/releases/download/v0.68.0/vi-mcp-0.68.0.tar.gz"
-  sha256 "6b4f8438dfbe5cd34ee65aab42fee9f4c18cdcc47696ac37760974e64a2b8a95"
+  url "https://github.com/imoes/vi-mcp/releases/download/v0.68.1/vi-mcp-0.68.1.tar.gz"
+  sha256 "f7f58f590b66549977368c36aca7998b23e5ffe6412c8e5f24d1461bd267cced"
   license "AGPL-3.0-or-later"
 
   depends_on "python@3.13"
@@ -30,11 +30,6 @@ class ViMcp < Formula
       exec "#{venv}/bin/python" -I -m vi_mcp "$@"
     SH
     doc.install "README.md", "README.de.md", "AGENTS.md", "CHANGELOG.md"
-  end
-
-  def post_install
-    (etc/"vi-p2p").mkpath
-    (var/"log").mkpath
   end
 
   service do
