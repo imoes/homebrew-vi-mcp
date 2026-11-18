@@ -4,8 +4,8 @@
 class ViMcp < Formula
   desc "VI memory as an MCP server for many AI sessions (Streamable HTTP, one process)"
   homepage "https://github.com/imoes/vi-mcp"
-  url "https://github.com/imoes/vi-mcp/releases/download/v0.69.8/vi-mcp-0.69.8.tar.gz"
-  sha256 "27f4c995306c6a882cc7678e8f2005d5541c7b9bd631e317048f5ab199525ff0"
+  url "https://github.com/imoes/vi-mcp/releases/download/v0.69.9/vi-mcp-0.69.9.tar.gz"
+  sha256 "42aac179bb293788a044bd84da6657719c5e08d0b8636c3042b5f666c206f5a4"
   license "AGPL-3.0-or-later"
 
   depends_on "python@3.13"
