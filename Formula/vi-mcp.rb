@@ -4,14 +4,14 @@
 class ViMcp < Formula
   desc "VI memory as an MCP server for many AI sessions (Streamable HTTP, one process)"
   homepage "https://github.com/imoes/vi-mcp"
-  url "https://github.com/imoes/vi-mcp/releases/download/v0.69.9/vi-mcp-0.69.9.tar.gz"
-  sha256 "42aac179bb293788a044bd84da6657719c5e08d0b8636c3042b5f666c206f5a4"
+  url "https://github.com/imoes/vi-mcp/releases/download/v0.70.0/vi-mcp-0.70.0.tar.gz"
+  sha256 "6ab67e1483e81924beab9204223bfb8da643c765d11465524fbff67dd99dba7f"
   license "AGPL-3.0-or-later"
 
   depends_on "python@3.13"
 
   # The same PyPI packages as the Windows installer (deploy/windows/install.ps1); binary wheels exist for macOS arm64 and x86_64.
-  PYPI = ["numpy>=1.26", "scikit-learn>=1.4", "cryptography>=41", "pyyaml>=6", "clingo==5.8.3"].freeze
+  PYPI = ["numpy>=1.26", "scikit-learn>=1.4", "cryptography>=41", "pyyaml>=6", "pypdf>=3.4", "clingo==5.8.3"].freeze
 
   def install
     python = Formula["python@3.13"].opt_bin/"python3.13"
